@@ -8,7 +8,7 @@ import org.mockito.internal.matchers.LessThan;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
-import static org.junit.*;
+import static org.junit.Assert.*;
 import static org.junit.matchers.JUnitMatchers.containsString;
 
 public class TestGreeter {
@@ -27,12 +27,7 @@ public class TestGreeter {
     assertThat(greeter.greet(someone), containsString(someone));
   }
   
-@Test
-  public void Intentionally failed() {
-   assert true(true); 
-  }
-    
-  
+
   @Test
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
